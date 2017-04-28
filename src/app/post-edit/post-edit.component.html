@@ -1,0 +1,9 @@
+<div *ngIf="post">
+  <h2><input #title placeholder="Title" value="{{post.title}}"/></h2>
+  <h5>by <i>{{post.author}}</i></h5>
+  <div>
+    <textarea #content>{{post.content}}</textarea>
+  </div>
+  <button (click)="view()" class="btn_go_back">View</button>
+  <button (click)="save(title.value, content.value)" class="btn_save">Save</button>
+</div>

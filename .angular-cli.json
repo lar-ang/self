@@ -19,9 +19,24 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+          "assets/director-theme/css/bootstrap.min.css",
+          "assets/director-theme/css/font-awesome.css",
+          "assets/director-theme/css/ionicons.min.css",
+          "assets/director-theme/css/style.css",
+          "assets/jquery-ui-1.9.2.custom/development-bundle/themes/base/jquery.ui.all.css",
+          "assets/common/css/admin-sidebar/admin-sidebar-main.css",
+          "assets/common/css/admin-schedules/admin-schedules-main.css",
+          "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+          "assets/director-theme/js/jquery.min.js",
+          "assets/director-theme/js/jquery-ui-1.10.3.min.js",
+          "assets/director-theme/js/bootstrap.min.js",
+          "assets/director-theme/js/Director/app.js",
+          "assets/jquery-ui-1.9.2.custom/development-bundle/ui/jquery.ui.core.js",
+          "assets/jquery-ui-1.9.2.custom/development-bundle/ui/jquery.ui.widget.js",
+          "assets/jquery-ui-1.9.2.custom/development-bundle/ui/jquery.ui.datepicker.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

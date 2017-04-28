@@ -1,0 +1,59 @@
+
+<section class="content-header posts-content-header-custom">
+    <h1>
+        <i class="fa fa-image"></i> Posts
+    </h1>
+    <ol class="breadcrumb posts-breadcrumb-custom">
+        <li><a routerLink="/admin/main"><i class="fa fa-dashboard"></i> Main</a></li>
+        <li class="active">Posts</li>
+    </ol>
+</section>
+
+<section class="panel admin-main-panel posts-main-panel-custom">
+    <header class="panel-heading">
+        <h3 class="box-title">
+            <span class="fa fa-list-alt"></span> Posts
+            <a routerLink='create' class="btn btn-xs btn-primary pull-right"><span class="fa fa-plus"></span> Post</a>
+        </h3>
+    </header>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th>Author</th>
+                    <th>&nbsp;</th>
+                    <th>
+                </tr>
+            </thead>
+            <tbody class="table">
+                <tr *ngFor="let post of posts">
+                    <td class="post id"><span>{{post.id}}</span></td>
+                    <td class="post title"><span>
+                        <a [routerLink]="post.id">{{post.title}}</a>
+                    </span></td>
+                    <td class="post content"><span>{{post.content}}</span></td>
+                    <td class="post author"><span>{{post.author}}</span></td>
+                    <td class="post button">
+                        <div class="btn-group">
+                            <a [routerLink]="[post.id, 'edit']" class="btn btn-xs btn-success"><span class="fa fa-pencil"></span> Edit</a>  
+                            <a href="#" (click)="deletePost(post.id)" class="btn btn-xs btn-danger btn-select" data-toggle="modal" data-target="#delete-modal" data-id="1"><span class="fa fa-trash"></span> Delete</a>
+                        </div>
+                    </td>
+                    <!--
+                    <td><span class="userName">1</span></td>
+                    <td><span class="userName">test</span></td>
+                    <td><span class="userName">1</span></td>
+                    <td>
+                        <div class="btn-group">
+                            <a href="http://tripperbus.infinixsoft.com/admin/Posts/1/edit" class="btn btn-xs btn-success"><span class="fa fa-pencil"></span> Edit</a>  
+                            <a href="#" class="btn btn-xs btn-danger btn-select" data-toggle="modal" data-target="#delete-modal" data-id="1"><span class="fa fa-trash"></span> Delete</a>
+                        </div>
+                    </td>-->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

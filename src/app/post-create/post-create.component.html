@@ -1,0 +1,9 @@
+<div><!-- *ngIf="post"-->
+  <h2><input #postTitle placeholder="Title" /></h2>
+  <h5>by <i>{{resAuthor}}</i></h5>
+  <div>
+    <textarea #postContent placeholder="Content"></textarea>
+  </div>
+  <button (click)="goBack()" class="btn_go_back">Back</button>
+  <button (click)="create(postTitle.value, postContent.value)" class="btn_save">Create</button>
+</div>

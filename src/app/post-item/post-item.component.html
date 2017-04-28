@@ -1,0 +1,9 @@
+<div *ngIf="post">
+  <h2>{{post.title}}</h2>
+  <h5>by <i>{{post.author}}</i></h5>
+  <div>
+    <textarea readonly>{{post.content}}</textarea>
+  </div>
+  <button (click)="goList()" class="btn_go_back">List</button>
+  <button (click)="goEdit()" class="btn_edit_post">Edit</button>
+</div>

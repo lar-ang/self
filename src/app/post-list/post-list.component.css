@@ -1,0 +1,39 @@
+
+.posts-content-header-custom {
+    position: relative;
+}
+
+.posts-breadcrumb-custom {
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 7px 5px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-radius: 2px;
+}
+
+.posts-main-panel-custom {
+    border-top: 3px solid #3c8dbc;
+}
+
+.panel-heading {
+    text-transform: initial;
+}
+
+td.post {
+    background-color: lightcyan;
+    max-width: 20em;
+    overflow: hidden;
+}
+
+td.post.title, td.post.author{
+    max-width: 10em;
+}
+
+td.post.button{
+    min-width: 8em;
+}

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 2em;
+}
+.btn_edit_post {
+    background-color: red;
+}
+.btn_go_back {
+    background-color: green;
+}
+.btn_save {
+    background-color: yellow;
+}
+* {
+    font-family: "Times New Roman"
+}

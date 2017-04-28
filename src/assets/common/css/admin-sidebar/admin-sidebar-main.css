@@ -1,0 +1,14 @@
+.treeview span.icon {
+    left: 200px;
+}
+
+.treeview ul {
+    margin-bottom: 0px !important;
+    margin-left: -15px;
+}
+
+.treeview span.icon {
+    margin-right: 10px !important;
+    margin-left: -3px !important;
+}
+

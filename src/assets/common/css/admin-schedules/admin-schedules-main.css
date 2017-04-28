@@ -1,0 +1,11 @@
+.seven-cols .col-md-1 {
+    display: inline-block;
+    width: 14.285714285714285714285714285714%;
+}
+
+.seven-cols .col-md-1.fix-height {
+    min-height: 120px;
+    padding: 5px;
+    text-align: center;
+}
+
